@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>像素测试图片展示</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: #fafafa;
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+        }
+        .pixel-demo {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #333;
+            background: url('https://raw.githubusercontent.com/radiohead1333/uploaded-images/main/test_pixel.png') repeat;
+            image-rendering: pixelated;
+            margin: 10px;
+        }
+        .info {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .code {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            word-break: break-all;
+        }
+        .links {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f0f0f0;
+            border-radius: 5px;
+        }
+        .links a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 像素测试图片分析</h1>
+        
+        <div class="info">
+            <h3>📊 图片信息</h3>
+            <p><strong>格式：</strong>PNG</p>
+            <p><strong>尺寸：</strong>1×1 像素</p>
+            <p><strong>模式：</strong>RGBA</p>
+            <p><strong>像素值：</strong>RGBA(0, 255, 0, 127) - 半透明绿色</p>
+            <p><strong>文件大小：</strong>96 字节</p>
+        </div>
+
+        <div class="image-container">
+            <h3>🎨 图片展示</h3>
+            <p>这是一个 1×1 像素的 PNG 图片，下面是放大展示效果：</p>
+            <div class="pixel-demo"></div>
+            <p><em>（通过 CSS 放大显示，实际图片只有 1 个像素）</em></p>
+            
+            <img src="https://raw.githubusercontent.com/radiohead1333/uploaded-images/main/test_pixel.png" 
+                 alt="1x1 像素图片" 
+                 style="border: 1px solid #ccc; margin: 10px;">
+        </div>
+
+        <div class="info">
+            <h3>📝 Base64 编码</h3>
+            <p>这是图片的 base64 编码：</p>
+            <div class="code">
+                iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>💡 用途说明</h3>
+            <p>这种 1×1 像素的透明图片通常用于：</p>
+            <ul>
+                <li>网页布局中的占位符</li>
+                <li>CSS 背景图案的基础</li>
+                <li>测试图片处理功能</li>
+                <li>作为透明像素使用</li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h3>🔗 相关链接</h3>
+            <a href="https://raw.githubusercontent.com/radiohead1333/uploaded-images/main/test_pixel.png" target="_blank">查看原图</a>
+            <a href="https://github.com/radiohead1333/uploaded-images/blob/main/test_pixel.png" target="_blank">GitHub 页面</a>
+            <a href="https://github.com/radiohead1333/uploaded-images" target="_blank">仓库主页</a>
+        </div>
+    </div>
+</body>
+</html>
